@@ -1,0 +1,257 @@
+body {
+  font-family: "Montserrat","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+  font-size: 16px;
+}
+/* Demo */
+/************************************************/
+.demo-div {
+  max-width: 1080px;
+  margin: 0 auto;
+  text-align: center;
+}
+.main-text-div p {
+  background-color: bisque;
+  padding: 20px;
+  color: black;
+  font-weight: bold;
+}
+.main-text-div {
+  font-size: 16px;
+}
+.demo-div img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.footer-demo-div {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+.footer-content-item-top a {
+  padding: 10px;
+  margin: 20px auto;
+  text-decoration: none;
+  font-weight: bold;
+  color: blue;
+}
+.footer-content-item-top a:hover {
+  color: red;
+  text-decoration: underline;
+  font-size: 20px;
+}
+/* Demoここまで */
+/************************************************/
+/* header */
+.header-top-div {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* 固定表示させるための設定 */
+  top: 0;
+  width: 1080px;
+  background-color: white; /* 必要に応じて背景色を設定 */
+  z-index: 1000; /* 他の要素の上に表示するための設定 */
+}
+.header-div h1 {
+  margin-left: 20px;
+}
+.header-div a {
+  margin-right: 20px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+.header-div a:hover{
+  color: blue;
+  text-decoration: underline;
+  font-size: 20px;
+}
+header img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+/* headerここまで */
+/************************************************/
+/*  Works  */
+.main-works-div {
+  background-color:  #f7f7f7;
+  padding-bottom: 50px;
+}
+.Works-div {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 50px;
+  
+}
+#Works {
+  text-align: center;
+  font-size: 32px;
+  margin: 0;
+}
+.Works-div a {
+  text-decoration: none;
+  color: black;
+}
+.Works-content-div {
+  display: flex; /* 要素を横並びにする */
+  justify-content: space-around; /* 要素を中央に寄せる */
+  align-items: center; /* 要素を中央に寄せる */
+  flex-wrap: wrap; /* 画面幅が狭くなった時に要素を折り返す */
+  margin: 20px 0;
+}
+.Works-content-item {
+  width: 250px;
+  height: 300px;
+  padding: 20px;
+  margin: 10px;
+}
+.Works-content-item img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+.Works-content-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.Works-content-item p {
+  font-size: 16px;
+}
+/*  Worksここまで  */
+/************************************************/
+/*  Technology  */
+.Technology-div {
+  margin: 20px auto;
+}
+.Technology-content-div {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex; /* 要素を横並びにする */
+  align-items: center;    
+  justify-content: center; /* 要素を中央に寄せる */
+  flex-wrap: wrap; /* 画面幅が狭くなった時に要素を折り返す */
+}
+.Technology-content-item {
+  display: flex; /* 要素を横並びにする */
+  text-align: center;   /* テキストを中央に寄せる */
+  align-items: center;  /* 要素を中央に寄せる */
+  width: 350px;
+  height: 300px;
+  margin: 10px;
+  padding: 20px;
+}
+.Technology-content-item img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+#Technology {
+  text-align: center;
+  font-size: 32px;
+  margin: 0;
+}
+/*  Technologyここまで  */
+/************************************************/
+/*  About  */
+.main-about-div {
+  background-color:  #f7f7f7;
+}
+.About-div {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 50px;
+}
+.About-content-div {
+  display: flex; /* 要素を横並びにする */
+  justify-content: space-around; /* 要素を中央に寄せる */
+  align-items: center; /* 要素を中央に寄せる */
+  margin: 20px 0;
+}
+.About-content-text {
+  display: flex; /* 要素を横並びにする */
+  display: block; /* 要素を縦並びにする */
+  align-items: center;  /* 要素を中央に寄せる */
+}
+.About-content-div img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+#About {
+  text-align: center;
+  font-size: 32px;
+  margin: 0;
+}
+/*  Aboutここまで  */
+/************************************************/
+/*  Contact  */
+.footer-div {
+  margin: 20px auto;
+}
+.footer-content-div {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+.footer-content-item {
+  margin: 20px auto;
+}
+.footer-content-item1 {
+  margin: 30px auto;
+}
+.footer-content-item-mail a {
+  color: blue;
+  text-decoration: none; /* リンクの下線を消す */
+  border-bottom: 1px dotted #4CAF50; /* ドットラインで強調 */
+  font-family: "Courier New", Courier, monospace; /* メールアドレスを個性的なフォントで表示 */
+  font-size: 24px;
+}
+.footer-content-item-mail a:hover {
+  color: red;
+}
+.footer-content-item-sms a img {
+  margin-right: 50px; /* 画像間の間隔を10pxに設定 */
+}
+.footer-content-item-sms a img:hover {
+  opacity: 0.5; /* 画像を半透明にする */
+}
+#Contact {
+  text-align: center;
+  font-size: 32px;
+}
+/*  Contactここまで  */
+/************************************************/
+/*  メディアクリエイト  */
+@media (max-width: 1080px) {
+  .header-div nav {
+    display: none;
+  }
+  .About-content-div {
+    display: block; /* 要素を縦並びにする */
+    align-items: center;
+  }
+  .About-content-div img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .About-content-text {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .footer-content-item-sms a img {
+    margin-right: 5px; /* 画像間の間隔を10pxに設定 */
+  }
+  .footer-content-item-mail a {
+    font-size: 12px;
+    border: none;
+  }
+}

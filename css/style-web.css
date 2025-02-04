@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Permanent+Marker&family=Zen+Antique+Soft&display=swap');
+body {
+  font-family: "Noto Sans JP", serif;
+}
+.header-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-div h1 {
+  border: 1px solid black;
+  padding: 5px;
+}
+.header-div ul {
+  display: flex;
+  list-style-type: none;
+}
+.header-div ul li  a {
+  margin-right: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+.header-div ul li  a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+.header-section img {
+  width: 100%;
+  height: auto;
+}
+/* About */
+/***************************************************/
+.about-section {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.about-section h2 {
+  text-align: center;
+  padding: 100px;
+  font-size: 34px;
+}
+.about-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-div img {
+  border-radius: 50%;
+}
+.about-text h3 {
+  font-size: 24px;
+}
+.about-text ul li {
+  font-size: 18px;
+}
+/* Works */
+/***************************************************/
+.works-section {
+  max-width: 1080px;
+  height: auto;
+  margin: 0 auto;
+}
+.works-section h2 {
+  text-align: center;
+  padding: 100px;
+  font-size: 34px;
+}
+.works-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.work {
+  width: 30%;
+}
+.work p {
+  text-align: center;
+  font-size: 18px;
+}
+/* footer */
+/***************************************************/
+footer p {
+  text-align: center;
+  padding: 50px;
+}
+
+/* レスポンシブ */
+/***************************************************/
+@media screen and (max-width: 768px) {
+.about-div {
+  display: block;
+}
+.about-div img {
+  width: 100%;
+  height: auto;
+}
+/* Works */
+.works-div {
+  display: block;
+}
+.work {
+  width: 100%;
+}
+.work img {
+  width: 100%;
+  height: auto;
+} 
+.works-section h2  {
+  padding: 50px;
+}
+}
+@media screen and (max-width: 1080px) {
+/* Works */
+.works-div {
+  display: block;
+}
+.work {
+  width: 100%;
+}
+.work img {
+  width: 100%;
+  height: auto;
+} 
+.works-section h2  {
+  padding: 50px;
+}
+}
