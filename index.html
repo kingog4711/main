@@ -1,0 +1,41 @@
+<?php
+// セッションを開始
+session_start();
+
+// ユーザー名を設定（今回は固定）
+$user_name = '侍太郎';
+
+// セッションにデータを保存
+if (isset($_SESSION[$user_name])) {
+    // セッション変数があれば、訪問回数を1加算
+    $_SESSION[$user_name]++;
+} else {
+    // セッション変数がなければ、1（初回訪問）をセット
+    $_SESSION[$user_name] = 1;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PHP基礎編</title>
+</head>
+
+<body>
+    <p>
+        <?php
+        echo 'ようこそ'.$user_name.'さん、'.$_SESSION[$user_name].'回目の訪問です。';
+
+        // 訪問回数が3回を超えたらセッションを終了
+        if ($_SESSION[$user_name] > 3) {
+            echo 'セッションを終了します。';
+            $_SESSION = array();
+            session_destroy();
+        }
+        ?>
+    </p>
+</body>
+
+</html>
